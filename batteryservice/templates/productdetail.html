@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+<h3>Here are the products available :</h3>
+<p> > {{object.name}} || {{object.types}}<br/>
+	{{object.description}}
+</p><br/>
+<form class='form' method="POST" action='{% url "BuyItem" %}'> {% csrf_token %}
+<input type="hidden" name="username" value='{{object.name}}'/>
+<!-- <button class='btn {% if is_following %}btn-defuault{% else %}btn-primary{% endif %}'>{% if is_following %}Unfollow{% else %}Follow{% endif %}</button> -->
+<button  class='btn-btn-primary'>Add to Cart</button>
+</form>
+</div>
+{% endblock %}

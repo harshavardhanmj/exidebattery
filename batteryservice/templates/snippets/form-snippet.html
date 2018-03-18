@@ -1,0 +1,14 @@
+
+{% block content %}
+<h1>{{ title }}</h1>
+{% if form.errors.non_field_errors %}
+{{ form.errors }}
+{% endif %}
+<form method="POST"> {% csrf_token %}
+	<!-- <input type="text" name="name" placeholder="Your Title"><br/>
+	<input type="text" name="location" placeholder="location"><br/>
+	<input type="text" name="category" placeholder="category"><br/> -->
+	{{ form.as_p }}
+	<button type="submit">SAVE</button>
+</form>
+{% endblock content %}

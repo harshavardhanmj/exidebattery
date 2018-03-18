@@ -1,0 +1,17 @@
+certifi==2018.1.18
+chardet==3.0.4
+dj-database-url==0.4.2
+Django==1.11
+django-crispy-forms==1.7.0
+docutils==0.14
+gunicorn==19.7.1
+idna==2.6
+Kivy==1.10.0
+Kivy-Garden==0.1.4
+Pillow==5.0.0
+psycopg2==2.7.4
+pygame==1.9.3
+Pygments==2.2.0
+pytz==2017.3
+requests==2.18.4
+urllib3==1.22
